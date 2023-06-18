@@ -1,4 +1,5 @@
 import type { GatsbyConfig } from "gatsby";
+import path from "path";
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -23,13 +24,16 @@ const config: GatsbyConfig = {
     "gatsby-plugin-sitemap", {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        "icon": "src/images/icon.png"
+        "icon": "src/images/icon.png",
       }
-    }, "gatsby-plugin-mdx", {
+    }, 
+    "gatsby-plugin-mdx", 
+    'gatsby-plugin-fontawesome-css',
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
-        "name": "images",
-        "path": "./src/images/"
+        name: "images",
+        path: path.join(__dirname, `src`, `images`),
       },
       __key: "images"
     }, {
