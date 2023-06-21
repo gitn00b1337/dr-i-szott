@@ -30,7 +30,14 @@ export const QuoteWithImage: React.FC<QuoteWithImageProps> = ({
         >
             <Box
                 order={imageOrder}
-                width='50%'
+                display={{
+                    base: 'none',
+                    md: 'block',
+                }}
+                width={{
+                    base: '100%',
+                    md: '50%'
+                }}
                 paddingBottom='50%'
                 background='gray.600'
                 overflow='hidden'
@@ -39,7 +46,10 @@ export const QuoteWithImage: React.FC<QuoteWithImageProps> = ({
                 
             </Box>
             <Box
-                width='50%'
+                width={{
+                    base: '100%',
+                    md: '50%'
+                }}
                 order='1'
                 padding='0 1.5rem 0 0'
             >

@@ -7,7 +7,7 @@ import { TextBlock } from "../components/text-block";
 import { Quote } from "../components/quote";
 import { ImageTextBlock } from "../components/image-text-block";
 import { QuoteWithImage } from "../components/quote-with-image";
-import HeroImage from '../images/about-hero3.png';
+import HeroImage from '../images/about-hero3.jpg';
 import { Section } from "../components/section";
 import ConservationImage from '../images/tracking.jpg';
 import { ImageDivider } from "../components/image-divider";
@@ -59,7 +59,11 @@ const IndexPage: React.FC<PageProps> = () => {
                     To me, working in conservation is...
                     </Text>
                 </Box> 
-                <Flex 
+                <Box 
+                    display={{
+                        md: 'flex',
+                        sm: 'block',
+                    }}
                     margin='2rem 0 0 0'
                 >
 
@@ -93,7 +97,7 @@ const IndexPage: React.FC<PageProps> = () => {
                             text: 'The world is a multitude of things, often frustrating or even disheartening. Appreciating the beauty in everything around me, like an African sunset or colleagues becoming friends, are what fuels me to continue my work. Tupo Pamoja: we are together! By making meaningful connections, I not only find resilience but also hope for the future. ',
                         }}
                     />
-                </Flex>
+                </Box>
                 <Box
                     margin='2rem 0 1rem 0'
                 >
