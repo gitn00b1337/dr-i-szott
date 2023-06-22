@@ -44,7 +44,7 @@ interface NavItem {
     { label: 'Roles', href: '/roles', },
     { label: 'Speaking', href: '/speaking', },
     { label: 'Publications', href: '/publications', },
-    { label: 'Contact', href: '/contact', },
+    // { label: 'Contact', href: '/contact', },
   ];
 
 export const Navbar: React.FC<NavbarProps> = () => {
