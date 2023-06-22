@@ -20,7 +20,6 @@ export const ImageTextBlock: React.FC<ImageTextBlockProps> = ({
     return (
         <Flex
             flexDir='column'
-            width='100%'
             pos='relative'
             alignItems='center'
             padding='1rem'

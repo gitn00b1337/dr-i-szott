@@ -24,6 +24,7 @@ import {
     ChevronDownIcon,
     ChevronRightIcon,
   } from '@chakra-ui/icons';
+import { useEffect, useState } from "react";
 
 export type NavbarProps = {
 
@@ -46,33 +47,51 @@ interface NavItem {
 
 export const Navbar: React.FC<NavbarProps> = () => {
     const { isOpen, onToggle } = useDisclosure();
+  //   const [scrollY, setScrollY] = useState(0)
+
+  //   const handleScroll = () => {
+  //     const y = (typeof window != undefined && window?.scrollY) || 0;
+  //     setScrollY(y);
+  //   }
+
+  //   useEffect(() => {
+  //     window.addEventListener("scroll", handleScroll);
+  //     return () => window.removeEventListener("scroll", handleScroll);
+  //  }, [])
     
     return (
+        <>
+        <Box paddingTop={{
+          "base": '72px',
+          "md": '104px',
+          "lg": '100px',
+        }}></Box>
         <Box 
             as='nav'
             pos='fixed'
             top='0'
             left='0'
             width='100%'
-            minH={{
-                "base": '60px',
-                "md": '100px',
-                "lg": '100px',
-            }}
             zIndex='100'
+            alignItems='center'
         >
             <Flex 
                 width='100%'
+                height='100%'
                 alignItems='center'
                 pos='relative'
-                background={ThemeColors.pine}
+                background='#fff'
+                // opacity={scrollY > 70 ? '0.8' : '1'}
+                // _hover={{
+                //   opacity: 1
+                // }}
             >
                
                 <Box
                     flexGrow={1}
                     padding={{ 
                         base: '1rem',
-                        md: '1.5rem',
+                        md: '2.5rem 1.5rem',
                     }}
                 >
                     Logo
@@ -81,7 +100,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
                     justifySelf='flex-end'
                     padding={{ 
                         base: '1rem',
-                        md: '1.5rem',
+                        md: '2.5rem 1.5rem',
                     }}
                 >
                     <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
@@ -90,13 +109,14 @@ export const Navbar: React.FC<NavbarProps> = () => {
                  <Flex
                     flex={{ base: 1, md: 'auto' }}
                     ml={{ base: -2 }}
-                    display={{ base: 'flex', md: 'none' }}>
+                    display={{ base: 'flex', md: 'none' }}
+                  >
                         <IconButton
                             onClick={onToggle}
                             background='transparent'
                             backgroundColor='transparent'
                             _hover={{ background: 'transparent', color: ThemeColors.yellow }}
-                            color='#fff'
+                            color={ThemeColors.brunswick}
                             icon={
                                 isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
                             }
@@ -109,11 +129,12 @@ export const Navbar: React.FC<NavbarProps> = () => {
                 <MobileNav />
             </Collapse>
         </Box>
+        </>
     )
 }
 
 const DesktopNav = () => {
-    const linkColor = '#fff';
+    const linkColor = ThemeColors.brunswick;
     const linkHoverColor = ThemeColors.yellow;
     const popoverContentBgColor = '#fff';
     
@@ -127,10 +148,9 @@ const DesktopNav = () => {
                   p={2}
                   href={navItem.href ?? '#'}
                   fontSize='1rem'
-                  fontWeight={700}
+                  fontWeight={800}
                   color={linkColor}
-                  textTransform='lowercase'
-                  letterSpacing='4px'
+                  letterSpacing='2px'
                   _hover={{
                     textDecoration: 'none',
                     color: linkHoverColor,
@@ -169,12 +189,12 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
         display={'block'}
         p={2}
         rounded={'md'}
-        _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}>
+        _hover={{ bg: useColorModeValue('#fff', '#000') }}>
         <Stack direction={'row'} align={'center'}>
           <Box>
             <Text
               transition={'all .3s ease'}
-              _groupHover={{ color: 'pink.400' }}
+              _groupHover={{ color: '#fff' }}
               fontWeight={500}>
               {label}
             </Text>
@@ -189,7 +209,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
             align={'center'}
             flex={1}
         >
-                <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
+                <Icon color={'#fff'} w={5} h={5} as={ChevronRightIcon} />
           </Flex>
         </Stack>
       </Link>
@@ -199,9 +219,8 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
   const MobileNav = () => {
     return (
       <Stack
-        bg={useColorModeValue('white', 'gray.800')}
+        bg={ThemeColors.pine}
         display={{ md: 'none' }}
-        borderBottom={`3px solid ${ThemeColors.yellow}`}
     >
         {NAV_ITEMS.map((navItem) => (
           <MobileNavItem key={navItem.label} {...navItem} />
@@ -216,10 +235,10 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
     return (
       <Stack 
         onClick={children && onToggle}
-        color={ThemeColors.jet}
+        color={'#fff'}
         _hover={{
-            background: ThemeColors.mint,
-            color: '#fff',
+            background: '#fff',
+            color: ThemeColors.yellow,
         }}
       >
         <Flex

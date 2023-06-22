@@ -14,9 +14,12 @@ import { ImageDivider } from "../components/image-divider";
 import CommunitiesImage from '../images/communities.jpg';
 import ResilienceImage from '../images/resilience.jpg';
 import ResearchImage from '../images/research.jpg';
+import SilvyImage from '../images/silvy.jpg';
+import { ParallaxProvider } from "react-scroll-parallax";
 
 const IndexPage: React.FC<PageProps> = () => {
     return (
+        <ParallaxProvider>
         <AppPage
             hero={{
                 src: HeroImage,
@@ -32,6 +35,7 @@ const IndexPage: React.FC<PageProps> = () => {
                     background='#f7f7f7'
                     padding='3rem'
                     borderRadius='1rem'
+                    margin='1rem'
                 >
                     <TextBlock
                         focused
@@ -50,7 +54,7 @@ const IndexPage: React.FC<PageProps> = () => {
             />
             <Section>
                 <Box
-                    margin='2rem 0 1rem 0'
+                    margin='2rem 0 2rem 0'
                 >
                     <Text 
                         textStyle='sectionHeader'
@@ -115,9 +119,12 @@ const IndexPage: React.FC<PageProps> = () => {
                     text='It was a real pleasure for me to work with Izzy as my supervisor during my internship at APOPO! Although it was not planned at first that she would be taking on this role, she did an excellent job. She guided me through my project and was always ready to provide useful advice, all while enhancing my self-reflection and leaving me a lot of autonomy. Thanks to her dedication, my internship was a great and very instructive experience.'
                     author='Sylvie Jadoul'
                     role='Student, Vives College'
+                    src={SilvyImage}
+                    alt='Sylvie Jadoul: a volunteer at APOPO'
                 />
             </Section>
         </AppPage>
+        </ParallaxProvider>
     )
 }
 

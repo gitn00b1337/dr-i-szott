@@ -1,4 +1,4 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, Image, } from "@chakra-ui/react";
 import React from "react";
 import { TextBlock } from "./text-block";
 
@@ -11,6 +11,8 @@ export type QuoteWithImageProps = {
         text: string
         link: string
     }
+    src: string
+    alt: string
 }
 
 export const QuoteWithImage: React.FC<QuoteWithImageProps> = ({
@@ -18,6 +20,8 @@ export const QuoteWithImage: React.FC<QuoteWithImageProps> = ({
     author,
     role,
     imagePosition,
+    src,
+    alt,
 }) => {
     const imageOrder = (imagePosition === 'left' && 0)
         || 2;
@@ -27,6 +31,7 @@ export const QuoteWithImage: React.FC<QuoteWithImageProps> = ({
             width='100%'
             pos='relative'
             flexGrow={1}
+            padding='1rem'
         >
             <Box
                 order={imageOrder}
@@ -39,11 +44,24 @@ export const QuoteWithImage: React.FC<QuoteWithImageProps> = ({
                     md: '50%'
                 }}
                 paddingBottom='50%'
-                background='gray.600'
                 overflow='hidden'
                 borderRadius='1rem'
+                pos='relative'
             >
-                
+                <Box
+                    pos='absolute'
+                    top='0'
+                    left='0'
+                    right='0'
+                    bottom='0'
+                    backgroundImage={`url('${src}')`}
+                    backgroundPosition='center center'
+                    backgroundRepeat='no-repeat'
+                    backgroundSize='cover'
+                    overflow='hidden'
+                >
+
+                </Box>
             </Box>
             <Box
                 width={{
@@ -51,7 +69,10 @@ export const QuoteWithImage: React.FC<QuoteWithImageProps> = ({
                     md: '50%'
                 }}
                 order='1'
-                padding='0 1.5rem 0 0'
+                padding={{
+                    base: 0,
+                    md: '0 1.5rem 0 0'
+                }}
             >
                 <Flex
                     padding='2rem'

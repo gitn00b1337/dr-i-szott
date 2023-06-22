@@ -85,18 +85,28 @@ const FooterIcon: React.FC<FooterIconProps> = ({
                 cursor='pointer'
             >
                 <Box
-                    padding='1rem'
+                    padding={{
+                        base: '0.5rem',
+                    }}
+                    fontSize={{
+                        base: '2rem',
+                        md: '2rem'
+                    }}
                 >
                     <FontAwesomeIcon 
-                        size="2xl"
                         icon={icon} 
                         color='inherit'
                     />
                 </Box>
                 <Box>
-                    <Text textStyle='smFocused'
+                    <Text 
+                        textStyle='smFocused'
                         textDecoration='none'
                         color='inherit'
+                        fontSize={{
+                            base: '0.8rem',
+                            md: '1rem'
+                        }}
                     >
                         { text }
                     </Text>
