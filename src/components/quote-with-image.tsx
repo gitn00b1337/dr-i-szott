@@ -23,8 +23,7 @@ export const QuoteWithImage: React.FC<QuoteWithImageProps> = ({
     src,
     alt,
 }) => {
-    const imageOrder = (imagePosition === 'left' && 0)
-        || 2;
+    const imageOrder = imagePosition === 'left' ? 0 : 2;
 
     return (
         <Flex

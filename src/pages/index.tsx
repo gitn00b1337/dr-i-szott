@@ -29,7 +29,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <Section>
                 <PageHeader
                     title="Dr Isabelle Szott"
-                    subtitle="My passion is conservation and welfare - of all living beings."
+                    subtitle="My passion is conservation and welfare - of all living beings"
                 />
                 <Box
                     background='#f7f7f7'

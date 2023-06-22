@@ -15,6 +15,7 @@ import {
     useColorModeValue,
     useBreakpointValue,
     useDisclosure,
+    Image,
   } from '@chakra-ui/react';
 import { NavbarLinkProps, NavbarLink } from "./navbar-link"
 import { ThemeColors } from "../theme";
@@ -25,6 +26,7 @@ import {
     ChevronRightIcon,
   } from '@chakra-ui/icons';
 import { useEffect, useState } from "react";
+import LogoImg from '../images/logo.png';
 
 export type NavbarProps = {
 
@@ -47,18 +49,7 @@ interface NavItem {
 
 export const Navbar: React.FC<NavbarProps> = () => {
     const { isOpen, onToggle } = useDisclosure();
-  //   const [scrollY, setScrollY] = useState(0)
 
-  //   const handleScroll = () => {
-  //     const y = (typeof window != undefined && window?.scrollY) || 0;
-  //     setScrollY(y);
-  //   }
-
-  //   useEffect(() => {
-  //     window.addEventListener("scroll", handleScroll);
-  //     return () => window.removeEventListener("scroll", handleScroll);
-  //  }, [])
-    
     return (
         <>
         <Box paddingTop={{
@@ -81,26 +72,29 @@ export const Navbar: React.FC<NavbarProps> = () => {
                 alignItems='center'
                 pos='relative'
                 background='#fff'
-                // opacity={scrollY > 70 ? '0.8' : '1'}
-                // _hover={{
-                //   opacity: 1
-                // }}
             >
                
                 <Box
                     flexGrow={1}
+                    alignContent='center'
                     padding={{ 
-                        base: '1rem',
-                        md: '2.5rem 1.5rem',
-                    }}
+                      base: '0 1rem',
+                      md: '0 2.5rem',
+                  }}
                 >
-                    Logo
+                    <Image
+                      src={LogoImg}
+                      alt='Logo'
+                      height={{
+                        base: '45px',
+                      }}
+                    />
                 </Box>
                 <Flex 
                     justifySelf='flex-end'
                     padding={{ 
                         base: '1rem',
-                        md: '2.5rem 1.5rem',
+                        md: '2.5rem 2.5rem',
                     }}
                 >
                     <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
