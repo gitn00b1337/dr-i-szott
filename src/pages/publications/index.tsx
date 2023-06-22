@@ -230,7 +230,9 @@ const IndexPage: React.FC<PageProps> = () => {
                         Google Scholar
                     </Link>
                 </Flex>
-                <Box>
+                <Box 
+                    padding='1rem'
+                >
                     {
                         REFERENCES.map((reference, index) => (
                             <Reference index={index} {...reference} />
