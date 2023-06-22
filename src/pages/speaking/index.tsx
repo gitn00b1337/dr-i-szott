@@ -6,7 +6,7 @@ import { AppPage } from "../../components/app-page";
 const IndexPage: React.FC<PageProps> = () => {
     return (
         <AppPage>
-            <Box>Speaking Page</Box>
+            <Box>Details coming soon!</Box>
         </AppPage>
     )
 }
