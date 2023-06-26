@@ -2,11 +2,16 @@ import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import { Box, Text } from "@chakra-ui/react";
 import { AppPage } from "../../components/app-page";
-import HeroImage from '../../images/tracking.jpg'
+// import HeroImage from '../../images/tracking.jpg'
 import { Section } from "../../components/section";
 import { PageHeader } from "../../components/page-header";
 import { RoleWithImage } from "../../components/role-with-image";
 import { TextBlock } from "../../components/text-block";
+import HeroImage from "../../images/speaking_hero.png";
+import SpeakingPodcastImage from "../../images/speaking_podcast.png";
+import SpeakingScentsImage from "../../images/speaking_scents.png";
+import SpeakingTeachingImage from "../../images/speaking_teaching.jpeg";
+import SpeakingStakeholdersImage from "../../images/speaking_stakeholders.png";
 
 const IndexPage: React.FC<PageProps> = () => (
     <AppPage
@@ -37,7 +42,7 @@ const IndexPage: React.FC<PageProps> = () => (
                 ]}
                 company=''
                 role='Scientific Conferences'
-                src={HeroImage}
+                src={SpeakingScentsImage}
                 alt='' 
             />
             <RoleWithImage
@@ -48,7 +53,7 @@ const IndexPage: React.FC<PageProps> = () => (
                 ]}
                 company=''
                 role='Scientific Teaching'
-                src={HeroImage}
+                src={SpeakingTeachingImage}
                 alt='' 
             />
             <RoleWithImage
@@ -59,7 +64,7 @@ const IndexPage: React.FC<PageProps> = () => (
                 ]}
                 company=''
                 role='Stakeholders'
-                src={HeroImage}
+                src={SpeakingStakeholdersImage}
                 alt='' 
             />
             <RoleWithImage
@@ -70,7 +75,7 @@ const IndexPage: React.FC<PageProps> = () => (
                 ]}
                 company=''
                 role='Podcasts & TV'
-                src={HeroImage}
+                src={SpeakingPodcastImage}
                 alt='' 
             />
         </Section>

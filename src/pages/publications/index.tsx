@@ -4,7 +4,7 @@ import { Box, BoxProps, Button, Flex, Link, Text } from "@chakra-ui/react";
 import { AppPage } from "../../components/app-page";
 import { PageHeader } from "../../components/page-header";
 import { Section } from "../../components/section";
-import HeroImage from '../../images/about-hero3.jpg'
+import HeroImage from '../../images/publications_hero.jpeg'
 import { ThemeColors } from "../../theme";
 
 type ReferenceProps = {

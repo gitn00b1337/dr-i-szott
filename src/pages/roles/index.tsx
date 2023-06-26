@@ -7,6 +7,14 @@ import { QuoteWithImage } from "../../components/quote-with-image";
 import HeroImage from '../../images/tracking.jpg'
 import { RoleWithImage } from "../../components/role-with-image";
 import { PageHeader } from "../../components/page-header";
+import RolesApopoImage from "../../images/roles_apopo.jpg";
+import RolesNkwichiImage from "../../images/roles_nkwichi.jpg";
+import RolesEcoWiceImage from "../../images/roles_ecowice.jpg";
+import RolesPHDImage from "../../images/roles_phd.png";
+import RolesBSCImage from "../../images/roles_bsc.png";
+import RolesMSCImage from "../../images/roles_msc.png";
+import RolesPMImage from "../../images/roles_pm.png";
+import RolesDanceImage from "../../images/roles_dance.png";
 
 const IndexPage: React.FC<PageProps> = () => {
     return (
@@ -30,7 +38,7 @@ const IndexPage: React.FC<PageProps> = () => {
                     ]}
                     company='APOPO - Tanzania'
                     role='Behavioural Research Scientist'
-                    src={HeroImage}
+                    src={RolesApopoImage}
                     alt='Izzy Szott, APOPO'
                 />
                 <RoleWithImage
@@ -41,7 +49,7 @@ const IndexPage: React.FC<PageProps> = () => {
                     ]}
                     company='Nkwichi - Mozambique'
                     role='General Manager'
-                    src={HeroImage}
+                    src={RolesNkwichiImage}
                     alt=''
                 />
                 <RoleWithImage
@@ -52,7 +60,7 @@ const IndexPage: React.FC<PageProps> = () => {
                     ]}
                     company='ECOWICE - Tanzania'
                     role='Scientific Advisor'
-                    src={HeroImage}
+                    src={RolesEcoWiceImage}
                     alt=''
                 />
                 <Grid gridTemplateColumns={{
@@ -70,7 +78,7 @@ const IndexPage: React.FC<PageProps> = () => {
                             ]}
                             company='PHD'
                             role=''
-                            src={HeroImage}
+                            src={RolesPHDImage}
                             alt=''
                         />
                     </Flex>
@@ -83,7 +91,7 @@ const IndexPage: React.FC<PageProps> = () => {
                             ]}
                             company='MPhil'
                             role=''
-                            src={HeroImage}
+                            src={RolesMSCImage}
                             alt=''
                         />
                     </Flex>
@@ -96,7 +104,7 @@ const IndexPage: React.FC<PageProps> = () => {
                             ]}
                             company='BSc (Hons)'
                             role=''
-                            src={HeroImage}
+                            src={RolesBSCImage}
                             alt=''
                         />
                     </Flex>
@@ -109,7 +117,7 @@ const IndexPage: React.FC<PageProps> = () => {
                             ]}
                             company='Project Management'
                             role=''
-                            src={HeroImage}
+                            src={RolesPMImage}
                             alt=''
                         />
                     </Flex>
@@ -122,7 +130,7 @@ const IndexPage: React.FC<PageProps> = () => {
                             ]}
                             company='Other Roles'
                             role=''
-                            src={HeroImage}
+                            src={RolesDanceImage}
                             alt=''
                         />
                     </Flex>
