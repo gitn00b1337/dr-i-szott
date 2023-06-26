@@ -7,7 +7,7 @@ import { QuoteWithImage } from "../../components/quote-with-image";
 import HeroImage from '../../images/tracking.jpg'
 import { RoleWithImage } from "../../components/role-with-image";
 import { PageHeader } from "../../components/page-header";
-import RolesApopoImage from "../../images/roles_apopo.jpg";
+import RolesApopoImage from "../../images/roles_apopo.png";
 import RolesNkwichiImage from "../../images/roles_nkwichi.jpg";
 import RolesEcoWiceImage from "../../images/roles_ecowice.jpg";
 import RolesPHDImage from "../../images/roles_phd.png";
