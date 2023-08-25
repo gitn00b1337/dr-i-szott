@@ -24,7 +24,7 @@ const config: GatsbyConfig = {
     "gatsby-plugin-sitemap", {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        "icon": "src/images/favicon.png",
+        "icon": "src/images/favicon2.png",
       }
     }, 
     "gatsby-plugin-mdx", 
