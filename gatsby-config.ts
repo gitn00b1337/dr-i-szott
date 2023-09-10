@@ -60,6 +60,7 @@ const config: GatsbyConfig = {
         portalZIndex: undefined,
       },
     },
+    "gatsby-plugin-netlify"
   ]
 };
 
