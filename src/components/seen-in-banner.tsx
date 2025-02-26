@@ -14,8 +14,11 @@ export const SeenInBanner: React.FC<SeenInBannerProps> = ({
             <Box 
                 display='flex' 
                 flex={1}
-                gap='1rem'
+                gap='3rem'
                 justifyContent='space-between'
+                height={['auto','auto', '100px']}
+                paddingX={'3rem'}
+                flexDir={['column', 'column', 'row']}
             >
                 <a 
                     href="https://www.bbc.com/reel/video/p0k45mgc/how-giant-rats-in-mini-vests-help-sniff-out-crime" 
@@ -23,7 +26,7 @@ export const SeenInBanner: React.FC<SeenInBannerProps> = ({
                     rel="nofollow noopener noreferrer"
                 >
                 <Image
-                    height={'100px'}
+                    maxHeight={'100%'}
                     src={BBCLogo}
                 />
                 </a>
@@ -33,7 +36,7 @@ export const SeenInBanner: React.FC<SeenInBannerProps> = ({
                     rel="nofollow noopener noreferrer"
                 >
                 <Image
-                    height={'100px'}
+                    maxHeight={'100%'}
                     src={ScienceNewsLogo}
                 />
                 </a>
