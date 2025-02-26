@@ -11,13 +11,6 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
-    // {
-    //   resolve: 'gatsby-source-contentful',
-    //   options: {
-    //     "accessToken": "SoVlVlDQpCctjxCavbnDbO7pBfxEP7P5-FxMcz_4kRk",
-    //     "spaceId": "3ytm6tmz7vvt"
-    //   }
-    // },
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
@@ -60,7 +53,7 @@ const config: GatsbyConfig = {
         portalZIndex: undefined,
       },
     },
-    "gatsby-plugin-netlify"
+    "gatsby-plugin-netlify",
   ]
 };
 

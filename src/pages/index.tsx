@@ -16,6 +16,7 @@ import ResilienceImage from '../images/resilience.jpg';
 import ResearchImage from '../images/research.jpg';
 import SilvyImage from '../images/silvy.jpg';
 import { ParallaxProvider } from "react-scroll-parallax";
+import { SeenInBanner } from "../components/seen-in-banner";
 
 const IndexPage: React.FC<PageProps> = () => {
     return (
@@ -47,6 +48,19 @@ const IndexPage: React.FC<PageProps> = () => {
                     />
                 </Box>
                 
+            </Section>
+            <Section>
+                <div>
+                    <PageHeader 
+                        title='As Seen In' 
+                        subtitle=""
+                    />
+                    <div>
+                        <SeenInBanner
+
+                        />
+                    </div>
+                </div>
             </Section>
             <ImageDivider
                 src={ConservationImage}

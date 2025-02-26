@@ -15,6 +15,7 @@ import RolesBSCImage from "../../images/roles_bsc.png";
 import RolesMSCImage from "../../images/roles_msc.png";
 import RolesPMImage from "../../images/roles_pm.png";
 import RolesDanceImage from "../../images/roles_dance.png";
+import RolesWavesOfActionImage from "../../images/wavesofaction.jpeg";
 
 const IndexPage: React.FC<PageProps> = () => {
     return (
@@ -30,27 +31,15 @@ const IndexPage: React.FC<PageProps> = () => {
                     subtitle="Research&nbsp;&nbsp;&nbsp;&nbsp;Leadership&nbsp;&nbsp;&nbsp;&nbsp;Teamwork"
                 />
                 <RoleWithImage
-                    imagePosition="left"
-                    alwaysShowImage={true}
-                    text={[
-                        'I have been working as a senior behavioural research scientist at APOPO since February 2021. At APOPO, we train African giant pouched rats for scent detection purposes. Here, I am the lead scientist training our rats to detect illegally trafficked wildlife in shipping containers. This project is currently funded by UNDP-GEF-USAID and GIZ. In addition, I am involved in a range of other research projects to support APOPO’s work. I directly supervise a team of Tanzanian researchers and animal trainers for my project, as well as visiting volunteers and students.',
-                        'Aside from planning, monitoring, and evaluating research, I continuously provide capacity building to my team, engage in scientific conferences and publications, and give talks and interviews to TV, radio, and podcasts. In 2022, I organised an international week-long scent detection workshop across multidisciplinary fields hosted in Tanzania: ‘The Power of Scents: Olfactory Research from Innovation to Application & Validation’. This not only brought together leading experts across a variety of fields, but also showcased the outstanding scientific work coming from the Global South.',
-                    ]}
-                    company='APOPO - Tanzania'
-                    role='Behavioural Research Scientist'
-                    src={RolesApopoImage}
-                    alt='Izzy Szott, APOPO'
-                />
-                <RoleWithImage
                     imagePosition="right"
                     alwaysShowImage={true}
                     text={[
-                        'In 2020, I was hired as the general manager of Nkwichi Lodge and Manda Wilderness Community Trust, Mozambique. Whilst waiting for my visa, COVID-19 brought the world to a standstill, resulting in the lodge not surviving this hit. Therefore, my work pivoted and focused on remotely managing the 40 employees in Mozambique, preparing detailed inventories, the sale of lodge assets, and coordinating and executing the termination of contracts. This involved close work with the stakeholders, Mozambican lawyers and Ministries, and the staff on the ground. We then re-employed a number of short-term staff to ensure the continued protection and upkeep of assets on the ground and operational management such as firebreaks. In addition, a new model of self-catered tourism in line with health and safety regulations allowed us to maintain some income for the remaining employees. Unfortunately, it did not create a sustainable position for myself, especially with continued lockdowns preventing travel. If you are looking for an incredible experience on the shore of Lake Niassa, do reach out to the Nkwichi team!'
+                        'At Okeanos, I work with a small team focused on ocean conservation. I evaluate funding requests, communicate and coordinate with partners, and arrange events and workshops. The largest project supported by the foundation is our own youth initiative \'Waves of Action\' where we support and engage young adults to find their own path towards ocean conservation. Our initiative is centered on marine ecology, inner development, and sustainable development. Aside from conceptualising, organising, and running so-called OceanCamps in France and Sweden for young adults, I also work with individual groups on realising their projects such as a documentary, an educational booklet and stakeholder engagement work, communication and peer-to-peer learning of topics, or development of workshops.'
                     ]}
-                    company='Nkwichi - Mozambique'
-                    role='General Manager'
-                    src={RolesNkwichiImage}
-                    alt=''
+                    company='Okeanos Foundation for the Sea'
+                    role='Project & Community Manager'
+                    src={RolesWavesOfActionImage}
+                    alt='Izzy Szott, Okeanos'
                 />
                 <RoleWithImage
                     imagePosition="left"
@@ -61,6 +50,29 @@ const IndexPage: React.FC<PageProps> = () => {
                     company='ECOWICE - Tanzania'
                     role='Scientific Advisor'
                     src={RolesEcoWiceImage}
+                    alt='Izzy Szott, ECOWICE'
+                />
+                <RoleWithImage
+                    imagePosition="right"
+                    alwaysShowImage={true}
+                    text={[
+                        'I worked as a senior behavioural research scientist at APOPO between February 2021-August 2024. At APOPO, I trained African giant pouched rats for scent detection purposes. I was the lead scientist training rats to detect illegally trafficked wildlife in shipping containers. This project was, at the time, funded by UNDP, USAID, and GIZ, amongst others. In addition, I was involved in a range of other research projects to support APOPO’s work. I directly supervised a team of Tanzanian researchers and animal trainers for my project, as well as visiting volunteers and students.',
+                        'Aside from planning, monitoring, and evaluating research, I continuously provided capacity building to my team, engaged in scientific conferences and publications, and gave talks and interviews to TV, radio, and podcasts. In 2022, I organised an international week-long scent detection workshop across multidisciplinary fields hosted in Tanzania: ‘The Power of Scents: Olfactory Research from Innovation to Application & Validation’. This not only brought together leading experts across a variety of fields, but also showcased the outstanding scientific work coming from the Global South.',
+                    ]}
+                    company='APOPO - Tanzania'
+                    role='Behavioural Research Scientist'
+                    src={RolesApopoImage}
+                    alt='Izzy Szott, APOPO'
+                />
+                <RoleWithImage
+                    imagePosition="left"
+                    alwaysShowImage={true}
+                    text={[
+                        'In 2020, I was hired as the general manager of Nkwichi Lodge and Manda Wilderness Community Trust, Mozambique. Whilst waiting for my visa, COVID-19 brought the world to a standstill, resulting in the lodge not surviving this hit. Therefore, my work pivoted and focused on remotely managing the 40 employees in Mozambique, preparing detailed inventories, the sale of lodge assets, and coordinating and executing the termination of contracts. This involved close work with the stakeholders, Mozambican lawyers and Ministries, and the staff on the ground. We then re-employed a number of short-term staff to ensure the continued protection and upkeep of assets on the ground and operational management such as firebreaks. In addition, a new model of self-catered tourism in line with health and safety regulations allowed us to maintain some income for the remaining employees. Unfortunately, it did not create a sustainable position for myself, especially with continued lockdowns preventing travel. If you are looking for an incredible experience on the shore of Lake Niassa, do reach out to the Nkwichi team!'
+                    ]}
+                    company='Nkwichi - Mozambique'
+                    role='General Manager'
+                    src={RolesNkwichiImage}
                     alt=''
                 />
                 <Grid gridTemplateColumns={{

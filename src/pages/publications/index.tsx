@@ -132,10 +132,11 @@ const IzzyID = 'Szott, I.D.'
 
 const REFERENCES: Reference[] = [
     {
-        status: 'IN_PREP',
-        authors: [IzzyID, 'et. al'],
-        title: 'Ratting on wildlife crime: Training African giant pouched rats to detect illegally smuggled wildlife.',
-        location: 'Invited submission to Frontiers in Conservation Science',
+        status: 'PUBLISHED',
+        authors: [IzzyID, 'Webb, E.K.', 'Mshana, S.', 'Mshigeni, A.', 'Magesa, W.S.', 'Iyungu, A.', 'Saidi, M.', 'Van de Laak, D.', 'Schneider, M.', 'Dore, A.', 'Brebner, K.', 'Davies-Mostert, H.', 'Cox, C.','Fast, C.D.'],
+        title: 'Ratting on wildlife crime: training African giant pouched rats to detect illegally trafficked wildlife.',
+        location: 'Frontiers in Conservation Science',
+        href: 'https://www.frontiersin.org/journals/conservation-science/articles/10.3389/fcosc.2024.1444126/full?utm_source=archives.internationalintrigue.io&utm_medium=newsletter&utm_campaign=what-s-happening-at-this-year-s-davos-in-the-desert&_bhlid=11f340181f40b48cc5cc6dbc88e6631da07b9366',
     },
     {
         status: 'PUBLISHED',
